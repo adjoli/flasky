@@ -65,7 +65,6 @@ class ChangePasswordForm(FlaskForm):
         validators=[DataRequired()]
     )
     submit = SubmitField('Update Password')
-    # TODO: Verificar se 'old_password' foi informado corretamente
 
 
 class PasswordResetRequestForm(FlaskForm):

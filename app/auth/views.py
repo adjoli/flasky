@@ -159,7 +159,7 @@ def change_email_request():
         if current_user.verify_password(form.password.data):
             new_email = form.email.data.lower()
             token = current_user.generate_email_change_token(new_email)
-            send_email(
+            send_mail(
                 to=new_email,
                 subject='Confirm your email address',
                 template='auth/email/change_email',
@@ -167,7 +167,8 @@ def change_email_request():
                 token=token
             )
             flash(
-                'An email with instructions to confirm your new email address has been sent to you.')
+                'An email with instructions to confirm your new email '
+                'address has been sent to you.')
             return redirect(url_for('main.index'))
         else:
             flash('Invalid email or password.')
