@@ -7,6 +7,7 @@ verify_ssl = true
 mypy = "*"
 flake8 = "*"
 autopep8 = "*"
+faker = "*"
 
 [packages]
 flask = "*"
@@ -18,6 +19,9 @@ flask-migrate = "*"
 flask-mail = "*"
 flask-login = "*"
 email-validator = "*"
+flask-pagedown = "*"
+markdown = "*"
+bleach = "*"
 
 [requires]
 python_version = "3.8"

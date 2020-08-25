@@ -14,6 +14,7 @@ class Config:
     FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky] '
     FLASKY_MAIL_SENDER = 'Flasky Admin <adaum79@gmail.com>'
     FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
+    FLASKY_POSTS_PER_PAGE = 10
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     @staticmethod
