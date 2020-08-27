@@ -8,6 +8,7 @@ mypy = "*"
 flake8 = "*"
 autopep8 = "*"
 faker = "*"
+httpie = "*"
 
 [packages]
 flask = "*"
@@ -22,6 +23,7 @@ email-validator = "*"
 flask-pagedown = "*"
 markdown = "*"
 bleach = "*"
+flask-httpauth = "*"
 
 [requires]
 python_version = "3.8"
